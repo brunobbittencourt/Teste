@@ -25,8 +25,8 @@
     </header>
 
     <main class="vitrine">
-      <ul>
-        <li class="card">
+      <ul class="listaProduto">
+        <!--  <li class="card">
           <figure>
             <img class="foto" src="/img/jaqueta.svg" alt="Lightweight Jacket" />
           </figure>
@@ -126,7 +126,7 @@
           <button class="adicionarCarrinho" type="button">
             Adicionar ao Carrinho
           </button>
-        </li>
+        </li> -->
       </ul>
 
       <aside>
@@ -145,12 +145,34 @@
           <p class="carrinhoDeCompras">Carrinho de Compras</p>
           <div class="caixaCarrinhoDeCompras">
             <p class="carrinhoVazio">Carrinho Vazio</p>
-            <spam> Adicione Itens</spam>
+            <spam class="adicioneItens"> Adicione Itens</spam>
+            <ul class="cardComprador">
+              <!--  <li class="listaCarrinho">
+                <figure>
+                  <img class="imgCarrinho" src="/img/camiseta_preta.svg" />
+                </figure>
+                <div class="listaProdutosCarrinho">
+                  <p class="tituloCarrinho">Casaco</p>
+                  <p class="valorCarrinho">R$ 100</p>
+                  <button class="buttonCarrinho" type="button">
+                    Remover Produto
+                  </button>
+                </div>
+              </li> -->
+            </ul>
+            <div class="caixaNovosProdutos">
+              <p class="quantidadeProdutos">
+                Quantidade: <spam class="quantidadeTotal">1</spam>
+              </p>
+              <p class="valorProdutos">
+                Valor: <spam class="valorTotal">1</spam>
+              </p>
+            </div>
           </div>
         </div>
       </aside>
     </main>
-
+    <script src="/js/database.js"></script>
     <script src="/js/index.js"></script>
   </body>
 </html>
