@@ -1,0 +1,17 @@
+{
+  "folders": [
+	{
+		"path": "..\\..\\..\\Módulo 2\\m2-javascript-intermediario-reproduzindo-mais-metodos-array-brunobbittencourt"
+	},
+	{
+		"path": "..\\..\\..\\Módulo 2\\entrega-lista-produtos-m2-sprint-1b-brunobbittencourt"
+	},
+	{
+		"path": ".."
+	}
+],
+  "settings": {
+    "liveServer.settings.port": 5501,
+    "liveServer.settings.multiRootWorkspaceName": "entrega-lista-produtos-m2-sprint-1b-brunobbittencourt"
+  }
+}

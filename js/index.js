@@ -4,11 +4,29 @@ const cardComprador = document.querySelector(".cardComprador");
 const novosProdutos = document.querySelector(".caixaNovosProdutos");
 const quantidadeProdutos = document.querySelector(".quantidadeTotal");
 const valorProdutos = document.querySelector(".valorTotal");
+const botaoTodos = document.querySelector("#Todos");
+const botaoAcessorios = document.querySelector("#Acessórios");
+const botaoCamisetas = document.querySelector("#Camisetas");
+const botaoCalcados = document.querySelector("#Calçados");
 
-function montarVitrine() {
-  for (let i = 0; i < data.length; i++) {
-    criarCard(data[i]);
+botaoTodos.addEventListener("click", filtragem);
+botaoAcessorios.addEventListener("click", filtragem);
+botaoCamisetas.addEventListener("click", filtragem);
+botaoCalcados.addEventListener("click", filtragem);
+
+function montarVitrine(arr) {
+  vitrine.innerHTML = "";
+  for (let i = 0; i < arr.length; i++) {
+    criarCard(arr[i]);
   }
+}
+
+function filtragem(event) {
+  const categoria = event.target.id;
+  const novoArray = data.filter(
+    (element) => element.tag[0] == categoria || categoria == "Todos"
+  );
+  montarVitrine(novoArray);
 }
 
 function criarCard(produto) {
@@ -44,9 +62,10 @@ function criarCard(produto) {
   button.addEventListener("click", addCart);
 }
 
-montarVitrine();
+montarVitrine(data);
 
 function addCart(event) {
+  console.log(event);
   const id = event.target.id;
   for (let i = 0; i < data.length; i++) {
     if (data[i].id == id) {
